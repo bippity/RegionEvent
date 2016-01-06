@@ -1,25 +1,19 @@
-﻿using Microsoft.CSharp;
-using Mono.Data.Sqlite;
+﻿using Mono.Data.Sqlite;
 using MySql.Data.MySqlClient;
 using Newtonsoft.Json;
 using System;
-using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Terraria;
 using TerrariaApi.Server;
 using TShockAPI;
 using TShockAPI.DB;
-using TShockAPI.Extensions;
 using TShockAPI.Hooks;
 
 namespace RegionEvent
 {
-	[ApiVersion(1, 20)]
+	[ApiVersion(1, 22)]
 	public class RegionEvent : TerrariaPlugin
 	{
 		public override string Author
@@ -273,6 +267,10 @@ namespace RegionEvent
 			TSPlayer player = TShock.Players[args.Who];
 			if (player == null)
 				return;
+			if (player.CurrentRegion == null) //gets rid that null exception
+			{
+				return;
+			}
 			if (regionStorage.ContainsKey(player.CurrentRegion))
 			{
 				var playerInfo = player.GetPlayerInfo();

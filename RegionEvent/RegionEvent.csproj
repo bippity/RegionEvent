@@ -30,9 +30,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Mono.Data.Sqlite" />
-    <Reference Include="MySql.Data" />
-    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>..\..\Tshock refs\Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\Tshock refs\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Tshock refs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,8 +46,12 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="TerrariaServer" />
-    <Reference Include="TShockAPI" />
+    <Reference Include="TerrariaServer">
+      <HintPath>..\..\Tshock refs\TerrariaServer.exe</HintPath>
+    </Reference>
+    <Reference Include="TShockAPI">
+      <HintPath>..\..\Tshock refs\TShockAPI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EventCommands.cs" />

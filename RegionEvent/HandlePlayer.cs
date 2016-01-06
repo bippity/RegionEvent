@@ -130,7 +130,8 @@ namespace RegionEvent
 			if (info.regionStorage.flags.Contains("BANPROJ") && info.regionStorage.bannedProjectiles.Contains(type) && !bypassFlag)
 			{
 				args.Player.RemoveProjectile(ident, owner);
-				args.Player.Disable();
+				//args.Player.Disable();
+				args.Player.Disable("", DisableFlags.None);
 				args.Player.SendErrorMessage("No permission to use this projectile in this region!");
 				return true;
 			}

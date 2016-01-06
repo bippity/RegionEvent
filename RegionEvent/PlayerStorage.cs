@@ -76,7 +76,8 @@ namespace RegionEvent
 		public void Disable (TSPlayer player, string reason, bool showInConsole = true)
 		{
 			disabled = true;
-			player.Disable(reason, showInConsole);
+			//player.Disable(reason, showInConsole);
+			player.Disable(reason, DisableFlags.WriteToConsole);
 		}
 
 		public void Update(TSPlayer player)
@@ -159,7 +160,7 @@ namespace RegionEvent
 			}
 			if (regionStorage.flags.Contains("HURT") && !bypassFlag)
 			{
-				if (regionStorage.healinterval < 0 || regionStorage.healamount < 0)
+				if (regionStorage.damageinterval < 0 || regionStorage.damageamount< 0)
 					return;
 				if ((DateTime.Now - lastDamageUpdate).TotalSeconds >= regionStorage.damageinterval)
 				{

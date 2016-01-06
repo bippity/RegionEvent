@@ -1,0 +1,12 @@
+C:\Users\Admin\Documents\GitHub\RegionEvent\RegionEvent\bin\Release\RegionEvent.dll
+C:\Users\Admin\Documents\GitHub\RegionEvent\RegionEvent\bin\Release\RegionEvent.pdb
+C:\Users\Admin\Documents\GitHub\RegionEvent\RegionEvent\bin\Release\Mono.Data.Sqlite.dll
+C:\Users\Admin\Documents\GitHub\RegionEvent\RegionEvent\bin\Release\MySql.Data.dll
+C:\Users\Admin\Documents\GitHub\RegionEvent\RegionEvent\bin\Release\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\GitHub\RegionEvent\RegionEvent\bin\Release\TerrariaServer.exe
+C:\Users\Admin\Documents\GitHub\RegionEvent\RegionEvent\bin\Release\TShockAPI.dll
+C:\Users\Admin\Documents\GitHub\RegionEvent\RegionEvent\bin\Release\HttpServer.dll
+C:\Users\Admin\Documents\GitHub\RegionEvent\RegionEvent\bin\Release\BCrypt.Net.dll
+C:\Users\Admin\Documents\GitHub\RegionEvent\RegionEvent\obj\Release\RegionEvent.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\RegionEvent\RegionEvent\obj\Release\RegionEvent.dll
+C:\Users\Admin\Documents\GitHub\RegionEvent\RegionEvent\obj\Release\RegionEvent.pdb
